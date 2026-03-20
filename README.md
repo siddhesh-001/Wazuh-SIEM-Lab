@@ -108,7 +108,7 @@ Both systems must communicate successfully.
 sudo apt install -y curl apt-transport-https lsb-release gnupg2
 ```
 
----
+
 
 ### Disable Sleep Mode (SIEM servers should never sleep)
 
@@ -116,7 +116,7 @@ sudo apt install -y curl apt-transport-https lsb-release gnupg2
 sudo systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target
 ```
 
----
+
 
 ### Configure Time Synchronization (Logs without correct time is useless)
 
@@ -124,14 +124,20 @@ sudo systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.ta
 sudo apt install -y chrony
 sudo systemctl enable chrony
 sudo systemctl start chrony
+
+##Verify-
+timedatectl
 ```
 
----
+
 
 ### Configure Firewall
 
 ```bash
+
+#-	Install UFW if not present 
 sudo apt install -y ufw
+
 sudo ufw allow 1514/tcp
 sudo ufw allow 1515/tcp
 sudo ufw allow 443/tcp
