@@ -23,26 +23,6 @@ Wazuh is an open-source security platform that provides:
 
 ---
 
-# 🔎 Architecture Overview
-
-```
-Attacker (Kali Purple)
-        ↓
-Victim System (Kali Linux)
-        ↓
-Wazuh Agent
-        ↓
-Wazuh Manager
-        ↓
-Wazuh Indexer
-        ↓
-Wazuh Dashboard
-        ↓
-Security Analysis
-```
-
----
-
 # 🧪 Lab Environment
 
 | Component | Role |
