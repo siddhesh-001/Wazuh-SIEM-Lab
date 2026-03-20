@@ -110,7 +110,7 @@ sudo apt install -y curl apt-transport-https lsb-release gnupg2
 
 ---
 
-### Disable Sleep Mode
+### Disable Sleep Mode (SIEM servers should never sleep)
 
 ```bash
 sudo systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target
