@@ -118,7 +118,7 @@ sudo systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.ta
 
 ---
 
-### Configure Time Synchronization
+### Configure Time Synchronization (Logs without correct time is useless)
 
 ```bash
 sudo apt install -y chrony
