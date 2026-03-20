@@ -167,6 +167,7 @@ sudo ./wazuh-install.sh -a
 Installation time: ~10–20 minutes, depending on system specs.
 
 **-*-*At the end of the successful installation, the terminal will give a dashboard URL, including username and password to access the Wazuh dashboard. Save the credentials in a text file (or) in a nano text file.-*-***
+
 **- nano wazuh-creds.txt**
 
 ---
