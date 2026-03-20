@@ -244,19 +244,6 @@ Confirm agent appears in dashboard.
 
 ```
 
-
-# 🟢 Detection Workflow
-
-This lab simulates real SOC monitoring:
-
-1. Logs generated on endpoint
-2. Wazuh agent collects logs
-3. Logs sent to manager
-4. Rules applied
-5. Alerts generated
-6. Dashboard displays alerts
-7. Analyst investigates
-
 ---
 
 #  Key Learning Outcomes
