@@ -201,7 +201,19 @@ Login using generated credentials.
 Navigate in dashboard:
 
 ```
-Agents Management → Deploy New Agent
+1. Agents Management → Deploy New Agent
+
+2.	Select Operating System and pakage
+    To check the system specs of linux based system:
+   -	Check Distribution pakage: cat /etc/os-release
+   -	Check Architecture: uname -m
+
+3.	Enter Agent name (Example: victim-endpoint)
+
+4.	Copy the Generated Command
+
+5.  Paste and Run the Command on Kali linux (Victim system) to install the agent.
+
 ```
 
 ---
