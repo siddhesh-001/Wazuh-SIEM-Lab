@@ -131,11 +131,11 @@ timedatectl
 
 
 
-### Configure Firewall
+### Open Required Firewall Ports
 
 ```bash
 
-#-	Install UFW if not present 
+#-	Install UFW if not present (ufw is a simple firewall manager)
 sudo apt install -y ufw
 
 sudo ufw allow 1514/tcp
