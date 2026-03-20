@@ -44,6 +44,8 @@ Wazuh is an open-source security platform that provides:
 | RAM | 8 GB | 16 GB |
 | CPU | 2 vCPU | 4 vCPU |
 
+**Test lab using 16GB and 4 processors for kali purple & 8GB and 2 processors for kali linux**
+
 ---
 
 # Phase 1 — Initial Setup
