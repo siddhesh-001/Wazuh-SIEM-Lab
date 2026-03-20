@@ -46,7 +46,7 @@ Wazuh is an open-source security platform that provides:
 
 ---
 
-# 🧱 Phase 1 — Environment Preparation
+# Phase 1 — Initial Setup
 
 ### Snapshot Setup
 
