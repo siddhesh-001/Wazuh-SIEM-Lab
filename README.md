@@ -238,6 +238,13 @@ Confirm agent appears in dashboard.
 
 ---
 
+**Follow the link to see detection results:**
+
+```bash
+
+```
+
+
 # 🟢 Detection Workflow
 
 This lab simulates real SOC monitoring:
@@ -262,13 +269,3 @@ This project demonstrates:
 - Security event detection workflow
 - SOC-style investigation process
 
----
-
-#  Skills Demonstrated
-
-- SIEM (Wazuh)
-- Log Analysis
-- Threat Detection
-- Linux System Administration
-- Network Monitoring
-- Security Operations (SOC)
