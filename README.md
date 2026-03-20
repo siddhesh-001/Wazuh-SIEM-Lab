@@ -11,7 +11,7 @@ The lab simulates a real-world security monitoring setup where:
 
 ---
 
-# 📌 Project Overview
+#  Project Overview
 
 Wazuh is an open-source security platform that provides:
 
@@ -23,7 +23,7 @@ Wazuh is an open-source security platform that provides:
 
 ---
 
-# 🧪 Lab Environment
+#  Lab Environment
 
 | Component | Role |
 |----------|------|
@@ -36,7 +36,7 @@ Wazuh is an open-source security platform that provides:
 
 ---
 
-# ⚙️ System Requirements
+#  System Requirements
 
 | Resource | Minimum | Recommended |
 |---------|--------|-------------|
@@ -48,7 +48,7 @@ Wazuh is an open-source security platform that provides:
 
 ---
 
-# Phase 1 — Initial Setup
+# 🟢 Phase 1 — Initial Setup
 
 ### Snapshot Setup
 
@@ -100,7 +100,7 @@ Both systems must communicate successfully.
 
 ---
 
-# 🛠️ Phase 2 — Prepare Wazuh Server
+# 🟢 Phase 2 — Prepare Wazuh Server
 
 ### Install Required Packages
 
@@ -190,7 +190,7 @@ Login using generated credentials.
 
 ---
 
-# 🖥️ Phase 4 — Deploy Wazuh Agent
+# 🟢 Phase 4 — Deploy Wazuh Agent
 
 ### Generate Agent Command
 
@@ -228,7 +228,7 @@ Confirm agent appears in dashboard.
 
 ---
 
-# 🔍 Detection Workflow
+# 🟢 Detection Workflow
 
 This lab simulates real SOC monitoring:
 
@@ -242,7 +242,7 @@ This lab simulates real SOC monitoring:
 
 ---
 
-# 🎯 Key Learning Outcomes
+#  Key Learning Outcomes
 
 This project demonstrates:
 
@@ -254,7 +254,7 @@ This project demonstrates:
 
 ---
 
-# 📚 Skills Demonstrated
+#  Skills Demonstrated
 
 - SIEM (Wazuh)
 - Log Analysis
