@@ -147,7 +147,7 @@ sudo ufw enable
 
 ---
 
-# 🟢 Phase 3 — Install Wazuh Stack
+# 🟢 Phase 3 — Install Wazuh Stack (On Kali Purple)
 
 ### Download Installer
 
