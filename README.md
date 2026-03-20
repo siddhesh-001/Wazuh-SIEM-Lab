@@ -170,7 +170,7 @@ Installation time: ~10–20 minutes, depending on system specs.
 
 **- nano wazuh-creds.txt**
 
----
+
 
 ### Verify Services
 
@@ -182,7 +182,7 @@ sudo systemctl status wazuh-dashboard
 
 All services should be **active and running**.
 
----
+
 
 ### Access Dashboard
 
@@ -218,11 +218,6 @@ Navigate in dashboard:
 
 ---
 
-### Install Agent on Endpoint
-
-Run generated command on Kali Linux.
-
----
 
 ### Start Agent
 
@@ -232,7 +227,6 @@ sudo systemctl enable wazuh-agent
 sudo systemctl start wazuh-agent
 ```
 
----
 
 ### Verify Agent
 
