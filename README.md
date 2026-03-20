@@ -109,12 +109,18 @@ sudo apt install -y curl apt-transport-https lsb-release gnupg2
 ```
 
 
+<img width="661" height="501" alt="Install Required Base Packages_01" src="https://github.com/user-attachments/assets/0206665a-1a7f-4ec9-a7e4-a88c93b3efad" />
+
+
 
 ### Disable Sleep Mode (SIEM servers should never sleep)
 
 ```bash
 sudo systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target
 ```
+
+
+<img width="715" height="122" alt="Disable Automatic Sleep-Suspend_02" src="https://github.com/user-attachments/assets/61e11f7d-17b5-477d-a0ba-c549bb030a0e" />
 
 
 
@@ -128,6 +134,9 @@ sudo systemctl start chrony
 ##Verify-
 timedatectl
 ```
+
+
+<img width="849" height="745" alt="Set Proper Time Synchronization_03" src="https://github.com/user-attachments/assets/c5404877-53dd-4939-a9c3-e91830ee1b45" />
 
 
 
@@ -144,6 +153,10 @@ sudo ufw allow 443/tcp
 sudo ufw allow 55000/tcp
 sudo ufw enable
 ```
+
+
+<img width="356" height="250" alt="Open Required Firewall Ports_04" src="https://github.com/user-attachments/assets/58fd8799-9636-48fd-ab89-2750c80dcbdc" />
+
 
 ---
 
@@ -162,9 +175,12 @@ chmod +x wazuh-install.sh
 
 ```bash
 sudo ./wazuh-install.sh -a
+# Installation time: ~10–20 minutes, depending on system specs.
 ```
 
-Installation time: ~10–20 minutes, depending on system specs.
+
+<img width="909" height="691" alt="Run single-node installation_05" src="https://github.com/user-attachments/assets/4d36a473-2e9b-4208-aef6-b7511d25d613" />
+
 
 **-*-*At the end of the successful installation, the terminal will give a dashboard URL, including username and password to access the Wazuh dashboard. Save the credentials in a text file (or) in a nano text file.-*-***
 
@@ -183,6 +199,12 @@ sudo systemctl status wazuh-dashboard
 All services should be **active and running**.
 
 
+<img width="766" height="56" alt="Verify services_001" src="https://github.com/user-attachments/assets/29398722-b678-4ab1-be28-9fb8828cfb46" />
+
+<img width="763" height="51" alt="Verify services_002" src="https://github.com/user-attachments/assets/28e79935-7ab5-4ab3-bfdd-8941296f9516" />
+
+<img width="746" height="51" alt="Verify services_003" src="https://github.com/user-attachments/assets/1d47ddf8-5e37-47dd-a23a-650eefea92f5" />
+
 
 ### Access Dashboard
 
@@ -191,6 +213,10 @@ https://<YOUR_IP>
 ```
 
 Login using generated credentials.
+
+
+<img width="1701" height="819" alt="Wazuh Dashboard_06" src="https://github.com/user-attachments/assets/030ce2a7-63e6-48b7-92af-31c967d2ee9f" />
+
 
 ---
 
@@ -216,6 +242,16 @@ Navigate in dashboard:
 
 ```
 
+*Agent Deployment Page*
+
+<img width="1300" height="916" alt="P4_Open Agent Deployment Page _07" src="https://github.com/user-attachments/assets/74a99d76-ad2f-4f3d-a84d-ff1f61d3a158" />
+
+
+*Running generated command on kali linux*
+
+<img width="1692" height="333" alt="P4_Copy the Generated Command_08" src="https://github.com/user-attachments/assets/b98788f1-6a8c-49f3-91fd-de0dc19a48f7" />
+
+
 ---
 
 
@@ -234,7 +270,14 @@ sudo systemctl start wazuh-agent
 sudo systemctl status wazuh-agent
 ```
 
+<img width="746" height="112" alt="image" src="https://github.com/user-attachments/assets/efe68c64-c7b3-46d5-a64f-63556dc8e397" />
+
+
 Confirm agent appears in dashboard.
+
+
+<img width="1615" height="589" alt="image" src="https://github.com/user-attachments/assets/327df335-0289-4ce5-9951-f92da442d4b4" />
+
 
 ---
 
