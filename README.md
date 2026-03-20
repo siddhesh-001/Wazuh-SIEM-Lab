@@ -70,12 +70,16 @@ On Kali Purple:
 
 ```bash
 sudo hostnamectl set-hostname wazuh-siem
+
+# also change old host name in editor: sudo nano /etc/hosts -> then change old host name to new.
 ```
 
 On Kali Linux:
 
 ```bash
 sudo hostnamectl set-hostname victim-endpoint
+
+# also change old host name in editor: sudo nano /etc/hosts -> then change old host name to new.
 ```
 
 Verify:
