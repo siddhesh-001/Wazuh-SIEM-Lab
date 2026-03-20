@@ -238,7 +238,7 @@ Confirm agent appears in dashboard.
 
 ---
 
-**Follow the link to see detection results:**
+# Follow the link to see detection results:
 
 ```bash
 
