@@ -281,10 +281,11 @@ Confirm agent appears in dashboard.
 
 ---
 
-# Follow the link to see detection results:
+# Follow the link to see detection results and troubleshooting:
 
 ```bash
-
+#(Trouleshooting notes)
+https://github.com/siddhesh-001/Wazuh-SIEM-Lab/blob/main/Project%20Notes%20(troubleshooting%20steps)
 ```
 
 # Wazuh Alert Levels
