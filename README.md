@@ -1,5 +1,6 @@
 # 🛡️ Wazuh SIEM Lab — Stack Installation, Configuration & Agent Deployment
 (Latest wazuh_version="4.14.4")
+
 This project demonstrates the **deployment of a Wazuh SIEM (Security Information and Event Management) system** in a lab environment.
 
 The lab simulates a real-world security monitoring setup where:
