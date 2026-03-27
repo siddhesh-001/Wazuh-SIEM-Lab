@@ -163,7 +163,7 @@ sudo ufw enable
 
 # 🟢 Phase 3 — Install Wazuh Stack (On Kali Purple)
 
-### Download Installer
+### Download Installer (check for latest branch [https://documentation.wazuh.com/current/quickstart.html])
 
 ```bash
 curl -sO https://packages.wazuh.com/4.14/wazuh-install.sh
