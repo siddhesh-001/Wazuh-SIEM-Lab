@@ -1,0 +1,21 @@
+Issue:
+ 'SSH failed attempts alerts' not visible in Wazuh dashboard.
+
+Root Cause:
+ Kali Linux used journald only for logging, (/var/log/auth.log) must exist before Wazuh can monitor it. 
+ (/var/log/auth.log) was missing missing in ossec.conf file.
+
+Fix:
+- Added this block to ossec.config at the end of file just before '</ossec_config>':
+
+ ```bash
+ <localfile>
+    <log_format>syslog</log_format>
+    <location>/var/log/auth.log</location>
+  </localfile>
+ ```
+- Installed rsyslog (it writes SSH failures to /var/log/auth.log)
+- Removed dashboard 'authentication_success' filter.
+
+Result:
+SSH brute-force alerts detected successfully.
