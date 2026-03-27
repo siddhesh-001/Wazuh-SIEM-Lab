@@ -1,4 +1,4 @@
-# 🛡️ Wazuh SIEM Lab — Installation, Configuration & Agent Deployment
+# 🛡️ Wazuh SIEM Lab — Stack Installation, Configuration & Agent Deployment
 
 This project demonstrates the **deployment of a Wazuh SIEM (Security Information and Event Management) system** in a lab environment.
 
