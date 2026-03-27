@@ -291,6 +291,8 @@ Confirm agent appears in dashboard.
 
 Wazuh rates every alert from Level 0 to Level 15
 
+Open the dashboard → go to Security Events Click on any alert to expand it
+
 | Level Range | Severity | Example Event |
 |-------------|----------|---------------|
 | 0–3 | Informational | System startup, successful login |
