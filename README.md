@@ -287,6 +287,19 @@ Confirm agent appears in dashboard.
 
 ```
 
+# Wazuh Alert Levels
+
+Wazuh rates every alert from Level 0 to Level 15
+
+| Level Range | Severity | Example Event |
+|-------------|----------|---------------|
+| 0–3 | Informational | System startup, successful login |
+| 4–7 | Low | Single failed login attempt |
+| 8–11 | Medium | Multiple failed login attempts |
+| 12–14 | High | Brute-force attack detected |
+| 15 | Critical | Rootkit or system takeover |
+
+
 ---
 
 #  Key Learning Outcomes
