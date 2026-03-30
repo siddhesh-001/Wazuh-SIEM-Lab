@@ -232,7 +232,7 @@ sudo systemctl enable fail2ban --now
 
 <div align="center">
 
-Made with 🔒 for learning purposes &nbsp;|&nbsp; **Lab by:** Your Name  
+|&nbsp; **Lab by:** Siddhesh Chute  
 ⭐ Star this repo if you found it helpful!
 
 </div>
