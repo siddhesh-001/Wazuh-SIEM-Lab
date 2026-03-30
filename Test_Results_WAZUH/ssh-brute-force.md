@@ -10,6 +10,8 @@
 
 **A hands-on cybersecurity lab demonstrating SSH brute force attack detection using Wazuh SIEM.**
 
+> ⚠️ **Disclaimer:** This attack was performed in an **isolated lab environment**. Never perform brute force attacks on systems you do not own or have explicit permission to test.
+
 </div>
 
 ---
