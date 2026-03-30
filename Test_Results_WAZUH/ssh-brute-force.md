@@ -173,7 +173,7 @@ The **Wazuh Agent** on Kali Linux reads these logs in real time and forwards the
 
 ---
 
-## 🔐 Recommended Mitigations
+## Recommended Mitigations
 
 ```bash
 # 1. Disable SSH password authentication — use key-based auth only
@@ -191,7 +191,7 @@ sudo systemctl enable fail2ban --now
 
 ---
 
-## 📚 References
+## References
 
 - [Wazuh Documentation](https://documentation.wazuh.com/)
 - [Kali Purple Overview](https://www.kali.org/blog/kali-linux-2023-1-release/#kali-purple)
