@@ -20,13 +20,12 @@
 - [Overview](#-overview)
 - [Detection & Alerts](#-detection--alerts)
 - [Wazuh Rules Triggered](#-wazuh-rules-triggered)
-- [Screenshots](#-screenshots)
 - [Key Takeaways](#-key-takeaways)
 - [References](#-references)
 
 ---
 
-## 🔍 Overview
+## Overview
 
 In this lab, **Kali Purple** acts as both the **attacker** and the **Wazuh SIEM host**, while a **Kali Linux** machine serves as the **victim endpoint** with a Wazuh agent installed. The attack involves attempting SSH login with a non-existent user and wrong passwords — all captured and alerted on by Wazuh in real time.
 
@@ -42,7 +41,7 @@ In this lab, **Kali Purple** acts as both the **attacker** and the **Wazuh SIEM 
 
 ---
 
-## 🏗️ Lab Architecture
+## Lab Architecture
 
 ```
 ┌──────────────────────────────────┐
@@ -63,7 +62,7 @@ In this lab, **Kali Purple** acts as both the **attacker** and the **Wazuh SIEM 
 
 ---
 
-## ✅ Prerequisites
+## Prerequisites
 
 - [ ] Kali Purple VM with Wazuh Stack (Manager + Dashboard) running
 - [ ] Kali Linux VM with Wazuh Agent installed and enrolled to Kali Purple
@@ -114,14 +113,9 @@ ssh fakeuser@<KALI_LINUX_IP>
 
 When prompted for a password, **enter wrong passwords** multiple times:
 
-```
-fakeuser@<KALI_LINUX_IP>'s password: wrongpassword1   ← Press Enter
-Permission denied, please try again.
-fakeuser@<KALI_LINUX_IP>'s password: wrongpassword2   ← Press Enter
-Permission denied, please try again.
-fakeuser@<KALI_LINUX_IP>'s password: wrongpassword3   ← Press Enter
-Permission denied (publickey,password).
-```
+
+![001_ssh-login-attemp-wrong-password](https://github.com/user-attachments/assets/096af934-d988-400d-a5d4-8d93d8288755)
+
 
 > SSH disconnects after 3 failed attempts by default. Repeat the command a few times to generate more alerts.
 
@@ -149,6 +143,9 @@ The **Wazuh Agent** on Kali Linux reads these logs in real time and forwards the
 4. Observe alerts generated for the SSH failures
 
 
+![001_ssh-login-attemp-wrong-password](https://github.com/user-attachments/assets/76b8d909-6e3f-43e3-9c89-bd92bf8a5d13)
+
+
 ---
 
 ## Wazuh Rules Triggered
@@ -163,23 +160,6 @@ The **Wazuh Agent** on Kali Linux reads these logs in real time and forwards the
 > **Rule 5710** fires immediately for `fakeuser` since the user doesn't exist on the system.  
 > **Rule 5712** fires after repeated failures from the same IP within a short timeframe.
 
----
-
-## 📸 Screenshots
-
-> Add your screenshots inside a `/screenshots` folder in this repo and update paths below.
-
-### 1. Wazuh Dashboard — Alerts Overview
-![Wazuh Alerts Overview](./screenshots/wazuh-alerts-overview.png)
-
-### 2. Auth Failure Alert Detail (Rule 5710 / 5712)
-![Auth Failure Alert](./screenshots/auth-failure-alert.png)
-
-### 3. SSH Terminal Output from Kali Purple (Attacker Side)
-![SSH Failed Attempt](./screenshots/ssh-failed-attempt.png)
-
-### 4. auth.log on Kali Linux (Victim Side)
-![Auth Log](./screenshots/auth-log-victim.png)
 
 ---
 
