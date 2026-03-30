@@ -114,7 +114,7 @@ ssh fakeuser@<KALI_LINUX_IP>
 When prompted for a password, **enter wrong passwords** multiple times:
 
 
-![001_ssh-login-attemp-wrong-password](https://github.com/user-attachments/assets/096af934-d988-400d-a5d4-8d93d8288755)
+![001_ssh-login-attemp-wrong-password](https://github.com/user-attachments/assets/758af8f6-44fd-464b-9970-c1a39a4c5550)
 
 
 > SSH disconnects after 3 failed attempts by default. Repeat the command a few times to generate more alerts.
@@ -143,7 +143,7 @@ The **Wazuh Agent** on Kali Linux reads these logs in real time and forwards the
 4. Observe alerts generated for the SSH failures
 
 
-![001_ssh-login-attemp-wrong-password](https://github.com/user-attachments/assets/76b8d909-6e3f-43e3-9c89-bd92bf8a5d13)
+![001_ssh-login-attemp-wrong-password](https://github.com/user-attachments/assets/c845b87c-5e20-46f3-b978-95370c142334)
 
 
 ---
