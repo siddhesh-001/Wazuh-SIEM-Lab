@@ -18,10 +18,6 @@
 ## 📋 Table of Contents
 
 - [Overview](#-overview)
-- [Lab Architecture](#-lab-architecture)
-- [Prerequisites](#-prerequisites)
-- [Environment Setup](#-environment-setup)
-- [Attack Simulation](#-attack-simulation)
 - [Detection & Alerts](#-detection--alerts)
 - [Wazuh Rules Triggered](#-wazuh-rules-triggered)
 - [Screenshots](#-screenshots)
