@@ -226,7 +226,6 @@ sudo systemctl enable fail2ban --now
 - [Wazuh Documentation](https://documentation.wazuh.com/)
 - [Kali Purple Overview](https://www.kali.org/blog/kali-linux-2023-1-release/#kali-purple)
 - [MITRE ATT&CK T1110.001 — Password Guessing](https://attack.mitre.org/techniques/T1110/001/)
-- [Wazuh Brute Force Detection PoC Guide](https://documentation.wazuh.com/current/proof-of-concept-guide/detect-brute-force-attack.html)
 
 ---
 
