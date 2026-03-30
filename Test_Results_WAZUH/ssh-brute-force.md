@@ -54,14 +54,14 @@ In this lab, **Kali Purple** acts as both the **attacker** and the **Wazuh SIEM 
 │  ┌────────────────────────────┐  │
 │  │  Wazuh Stack               │  │         SSH Attempts
 │  │  (Manager + Dashboard)     │  │   ssh fakeuser@<KaliLinux-IP>
-│  └────────────────────────────┘  │ ─────────────────────────────►  ┌─────────────────────┐
-│                                  │   Wrong passwords entered        │     Kali Linux       │
+│  └────────────────────────────┘  │ ─────────────────────────────►  ┌──────────────────────┐
+│                                  │   Wrong passwords entered       │     Kali Linux       │
 │  [ Attacker Role ]               │ ◄─────────────────────────────  │  (Victim Endpoint)   │
-│  ssh fakeuser@<KaliLinux-IP>     │   Auth Failed responses          │  Wazuh Agent running │
-└──────────────────────────────────┘                                  └──────────┬──────────┘
-              ▲                                                                   │
-              │           Auth failure logs forwarded via Wazuh Agent             │
-              └───────────────────────────────────────────────────────────────────┘
+│  ssh fakeuser@<KaliLinux-IP>     │   Auth Failed responses         │  Wazuh Agent running │
+└──────────────────────────────────┘                                 └───────────┬──────────┘
+              ▲                                                                  │
+              │           Auth failure logs forwarded via Wazuh Agent            │
+              └──────────────────────────────────────────────────────────────────┘
                                 Alerts visible on Wazuh Dashboard
 ```
 
