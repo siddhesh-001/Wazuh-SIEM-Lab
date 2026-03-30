@@ -176,7 +176,7 @@ The **Wazuh Agent** on Kali Linux reads these logs in real time and forwards the
 ## Recommended Mitigations
 
 ```bash
-# 1. Disable SSH password authentication — use key-based auth only
+# 1. Disable SSH password authentication — *use key-based auth only*
 sudo nano /etc/ssh/sshd_config
 # Set: PasswordAuthentication no
 
