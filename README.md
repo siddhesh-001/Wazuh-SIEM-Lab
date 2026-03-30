@@ -286,7 +286,7 @@ Confirm agent appears in dashboard.
 
 ```bash
 #(Troubleshooting notes)
-https://github.com/siddhesh-001/Wazuh-SIEM-Lab/blob/main/Project%20Notes%20(troubleshooting%20steps)
+[Prject notes](https://github.com/siddhesh-001/Wazuh-SIEM-Lab/blob/main/Project%20Notes%20(troubleshooting%20steps))
 
 #(Test Results)
 https://github.com/siddhesh-001/Wazuh-SIEM-Lab/blob/main/Test_Results_WAZUH/ssh-brute-force.md
