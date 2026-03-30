@@ -148,23 +148,17 @@ The **Wazuh Agent** on Kali Linux reads these logs in real time and forwards the
 3. Filter by the **Kali Linux agent**
 4. Observe alerts generated for the SSH failures
 
-### Alerts You Should See:
-
-| Alert Description | Trigger |
-|---|---|
-| `sshd: Invalid user or authentication failure` | Logging in with `fakeuser` (non-existent user) |
-| `sshd: authentication failed` | Wrong passwords entered |
-| `sshd: Attempt to login using a non-existent user` | Rule 5710 fires |
 
 ---
 
-## 📜 Wazuh Rules Triggered
+## Wazuh Rules Triggered
 
 | Rule ID | Description | Level |
 |---|---|---|
+| **5503** | PAM: User login failed | 5 |
 | **5710** | sshd: Attempt to login using a non-existent user | 5 |
-| **5711** | sshd: Attempt to login using a denied user | 5 |
-| **5712** | sshd: SSHD brute force trying to get access to the system | **10** |
+| **2502** | syslog: User missed the password more than one time | **10** |
+| **5712** | sshd: SSHD brute force trying to get access to the system. Non existent user | **10** |
 
 > **Rule 5710** fires immediately for `fakeuser` since the user doesn't exist on the system.  
 > **Rule 5712** fires after repeated failures from the same IP within a short timeframe.
