@@ -15,16 +15,6 @@
 
 ---
 
-## 📋 Table of Contents
-
-- [Overview](#-overview)
-- [Detection & Alerts](#-detection--alerts)
-- [Wazuh Rules Triggered](#-wazuh-rules-triggered)
-- [Key Takeaways](#-key-takeaways)
-- [References](#-references)
-
----
-
 ## Overview
 
 In this lab, **Kali Purple** acts as both the **attacker** and the **Wazuh SIEM host**, while a **Kali Linux** machine serves as the **victim endpoint** with a Wazuh agent installed. The attack involves attempting SSH login with a non-existent user and wrong passwords — all captured and alerted on by Wazuh in real time.
