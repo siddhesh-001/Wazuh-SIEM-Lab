@@ -16,7 +16,7 @@
 
 ---
 
-## 📋 Table of Contents
+##  Table of Contents
 
 - [Overview](#-overview)
 - [Lab Architecture](#-lab-architecture)
@@ -33,7 +33,7 @@
 
 ---
 
-## 🔍 Overview
+##  Overview
 
 This lab builds on Lab 1 by enabling **Wazuh Active Response** — an automated defense mechanism that reacts to threats without manual intervention. When Hydra (running on Kali Purple) launches an SSH brute force attack against Kali Linux, Wazuh detects it, fires **Rule 5763**, and immediately instructs the Wazuh Agent to **drop all packets from the attacker's IP** using `iptables` / `firewall-cmd`. Hydra gets blocked mid-attack.
 
@@ -49,7 +49,7 @@ This lab builds on Lab 1 by enabling **Wazuh Active Response** — an automated 
 
 ---
 
-## 🏗️ Lab Architecture
+##  Lab Architecture
 
 ```
   KALI PURPLE (Attacker + Wazuh Manager)
@@ -89,7 +89,7 @@ This lab builds on Lab 1 by enabling **Wazuh Active Response** — an automated 
   │                   │  [7] All packets from Kali Purple DROPPED   │
   │                   └─────────────────────────────────────────────┘
   │
-  │  [8] Hydra gets blocked mid-attack ✅
+  │  [8] Hydra gets blocked mid-attack 
   │       "Connection refused / timed out"
   │
   └─────────────────────────────────────────────────┘
@@ -115,7 +115,7 @@ Active Response triggered
 firewall-drop script runs on victim
     │  iptables DROP rule inserted
     ▼
-Attacker IP blocked ✅
+Attacker IP blocked 
 ```
 
 Wazuh's **`firewall-drop`** is a built-in Active Response script located at:
@@ -126,7 +126,7 @@ It accepts the attacker's IP as an argument and adds a DROP rule to `iptables` (
 
 ---
 
-## ✅ Prerequisites
+##  Prerequisites
 
 - [ ] Lab 1 completed (Wazuh stack on Kali Purple, Agent on Kali Linux)
 - [ ] Both VMs on the same network and able to ping each other
@@ -209,7 +209,7 @@ hydra -l root -P /usr/share/wordlists/rockyou.txt ssh://<KALI_LINUX_IP> -t 4 -V
 
 ---
 
-## 🚫 Active Response in Action
+##  Active Response in Action
 
 ### Once Rule 5763 fires, Hydra gets cut off:
 ```
@@ -242,7 +242,7 @@ Active response completed: firewall-drop add - <KALI_PURPLE_IP>
 
 ---
 
-## ✅ Verification
+##  Verification
 
 ### 1. Confirm block from Kali Purple side:
 ```bash
@@ -271,7 +271,7 @@ sudo iptables -L INPUT -n
 |---|---|---|---|
 | **5710** | sshd: Attempt to login using a non-existent user | 5 | Log only |
 | **5712** | sshd: SSHD brute force trying to get access | 10 | Log only |
-| **5763** | sshd: brute force attack (more aggressive threshold) | **10** | ✅ **Triggers Active Response** |
+| **5763** | sshd: brute force attack (more aggressive threshold) | **10** |  **Triggers Active Response** |
 | **601** | Host blocked by Active Response | 3 | Logged on dashboard |
 
 ---
