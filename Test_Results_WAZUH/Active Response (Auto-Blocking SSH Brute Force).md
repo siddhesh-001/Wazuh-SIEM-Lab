@@ -276,27 +276,6 @@ sudo iptables -L INPUT -n
 
 ---
 
-## 📸 Screenshots
-
-> Place screenshots in a `/screenshots` folder and update paths below.
-
-### 1. Wazuh Dashboard — Rule 5763 Alert
-![Rule 5763 Fired](./screenshots/rule-5763-alert.png)
-
-### 2. Active Response Alert (Rule 601) on Dashboard
-![Active Response Alert](./screenshots/active-response-alert.png)
-
-### 3. Hydra Output — Blocked Mid-Attack
-![Hydra Blocked](./screenshots/hydra-blocked.png)
-
-### 4. iptables Rule Added on Kali Linux (Victim)
-![iptables Block Rule](./screenshots/iptables-block-rule.png)
-
-### 5. active-responses.log on Kali Linux
-![Active Response Log](./screenshots/active-response-log.png)
-
----
-
 ## 💡 Key Takeaways
 
 1. **Wazuh Active Response automates defense** — no SOC analyst needed to manually block an attacker.
