@@ -97,7 +97,7 @@ This lab builds on Lab 1 by enabling **Wazuh Active Response** — an automated 
 
 ---
 
-## ⚙️ How Active Response Works
+##  How Active Response Works
 
 ```
 Hydra Attack
@@ -136,7 +136,7 @@ It accepts the attacker's IP as an argument and adds a DROP rule to `iptables` (
 
 ---
 
-## 🔧 Configuration
+##  Configuration
 
 ### 1. Enable Active Response on Wazuh Manager (Kali Purple)
 
@@ -181,7 +181,7 @@ The default is enabled — no changes needed unless it was explicitly disabled.
 
 ---
 
-## ⚔️ Attack Simulation
+##  Attack Simulation
 
 > ⚠️ **Disclaimer:** Performed in a **controlled, isolated lab environment** only.
 
@@ -276,7 +276,7 @@ sudo iptables -L INPUT -n
 
 ---
 
-## 💡 Key Takeaways
+##  Key Takeaways
 
 1. **Wazuh Active Response automates defense** — no SOC analyst needed to manually block an attacker.
 2. **Rule 5763** is the brute force threshold trigger specifically wired to fire Active Response.
